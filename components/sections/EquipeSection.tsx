@@ -13,6 +13,7 @@ export default function EquipeSection() {
               alt="L'équipe Green Glisse devant la tente jaune et blanche sur la plage"
               fill
               className="object-cover"
+              style={{ objectPosition: "center top" }}
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>

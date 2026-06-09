@@ -95,7 +95,7 @@ export default function Footer() {
             </h3>
             <div className="flex gap-3">
               <a
-                href="https://instagram.com/greenglisse"
+                href="https://www.instagram.com/greenglisse.surfschool/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#2D6A4F] hover:bg-[#52B788] p-3 rounded-full transition-colors"

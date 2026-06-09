@@ -74,6 +74,7 @@ export default function EcolePage() {
           alt="L'équipe Green Glisse sur la plage de Biarritz"
           fill
           className="object-cover"
+          style={{ objectPosition: "center top" }}
           priority
         />
         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
@@ -132,6 +133,7 @@ export default function EcolePage() {
                     alt={`${membre.nom} — ${membre.role} chez Green Glisse`}
                     fill
                     className="object-cover"
+                    style={{ objectPosition: "center top" }}
                   />
                 </div>
                 <div className="p-6">

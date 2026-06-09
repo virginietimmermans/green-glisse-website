@@ -25,8 +25,8 @@ export default function Navigation() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-md" : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#2D6A4F] ${
+        isScrolled ? "shadow-md" : ""
       }`}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -34,17 +34,13 @@ export default function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <span
-              className={`text-2xl font-bold ${
-                isScrolled ? "text-[#2D6A4F]" : "text-white"
-              }`}
+              className="text-2xl font-bold text-white"
               style={{ fontFamily: "var(--font-playfair), serif" }}
             >
               Green Glisse
             </span>
             <span
-              className={`text-sm hidden sm:block ${
-                isScrolled ? "text-[#52B788]" : "text-[#F4E9CD]"
-              }`}
+              className="text-base hidden sm:block text-[#F4E9CD]"
               style={{ fontFamily: "var(--font-dancing), cursive" }}
             >
               Créateur de surfeurs
@@ -58,11 +54,7 @@ export default function Navigation() {
                 key={link.href}
                 href={link.href}
                 className={`text-sm font-semibold transition-colors hover:text-[#52B788] ${
-                  pathname === link.href
-                    ? "text-[#52B788]"
-                    : isScrolled
-                    ? "text-[#1C1C1C]"
-                    : "text-white"
+                  pathname === link.href ? "text-[#52B788]" : "text-white"
                 }`}
                 style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
               >
@@ -75,11 +67,7 @@ export default function Navigation() {
           <div className="flex items-center gap-3">
             {/* Langue FR/EN */}
             <button
-              className={`hidden sm:flex items-center gap-1 text-sm font-medium px-2 py-1 rounded transition-colors ${
-                isScrolled
-                  ? "text-[#1C1C1C] hover:text-[#2D6A4F]"
-                  : "text-white hover:text-[#F4E9CD]"
-              }`}
+              className="hidden sm:flex items-center gap-1 text-sm font-medium px-2 py-1 rounded transition-colors text-white hover:text-[#F4E9CD]"
             >
               🇫🇷 FR
             </button>
@@ -96,9 +84,7 @@ export default function Navigation() {
             {/* Burger mobile */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className={`lg:hidden p-2 rounded-md ${
-                isScrolled ? "text-[#1C1C1C]" : "text-white"
-              }`}
+              className="lg:hidden p-2 rounded-md text-white"
               aria-label="Menu"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -114,21 +100,21 @@ export default function Navigation() {
 
         {/* Mobile menu */}
         {isMenuOpen && (
-          <div className="lg:hidden bg-white border-t border-gray-100 py-4">
+          <div className="lg:hidden bg-[#2D6A4F] border-t border-[#52B788]/30 py-4">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsMenuOpen(false)}
-                className={`block px-4 py-3 text-base font-semibold transition-colors hover:text-[#52B788] hover:bg-[#F4E9CD] ${
-                  pathname === link.href ? "text-[#2D6A4F]" : "text-[#1C1C1C]"
+                className={`block px-4 py-3 text-base font-semibold transition-colors hover:text-[#52B788] hover:bg-white/10 ${
+                  pathname === link.href ? "text-[#52B788]" : "text-white"
                 }`}
                 style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
               >
                 {link.label}
               </Link>
             ))}
-            <div className="px-4 pt-3 border-t border-gray-100 mt-2">
+            <div className="px-4 pt-3 border-t border-[#52B788]/30 mt-2">
               <Link
                 href="/reservation"
                 onClick={() => setIsMenuOpen(false)}
