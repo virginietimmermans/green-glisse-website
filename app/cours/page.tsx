@@ -194,39 +194,22 @@ export default function CoursPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
             {/* Combinaison */}
             <div className="text-center">
-              <div className="flex justify-center mb-3">
-                <svg className="w-10 h-10 text-[#2D6A4F]" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.57a1 1 0 00.99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 002-2V10h2.15a1 1 0 00.99-.84l.58-3.57a2 2 0 00-1.34-2.23z" />
-                </svg>
-              </div>
+              <div className="flex justify-center mb-3 text-4xl">🤿</div>
               <p className="text-sm font-semibold text-[#1C1C1C]" style={{ fontFamily: "var(--font-montserrat), sans-serif" }}>Combinaison</p>
             </div>
             {/* Planche de surf */}
             <div className="text-center">
-              <div className="flex justify-center mb-3">
-                <svg className="w-10 h-10 text-[#2D6A4F]" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 2C9.5 2 8 4.5 8 8v9c0 2.5 1.8 4 4 4s4-1.5 4-4V8c0-3.5-1.5-6-4-6z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M16 17l2 4-3.5-1.5" />
-                </svg>
-              </div>
+              <div className="flex justify-center mb-3 text-4xl">🏄</div>
               <p className="text-sm font-semibold text-[#1C1C1C]" style={{ fontFamily: "var(--font-montserrat), sans-serif" }}>Planche de surf</p>
             </div>
             {/* Assurance */}
             <div className="text-center">
-              <div className="flex justify-center mb-3">
-                <svg className="w-10 h-10 text-[#2D6A4F]" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-              </div>
+              <div className="flex justify-center mb-3 text-4xl">🛡️</div>
               <p className="text-sm font-semibold text-[#1C1C1C]" style={{ fontFamily: "var(--font-montserrat), sans-serif" }}>Assurance</p>
             </div>
             {/* Secouriste sur place */}
             <div className="text-center">
-              <div className="flex justify-center mb-3">
-                <svg className="w-10 h-10 text-[#2D6A4F]" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
+              <div className="flex justify-center mb-3 text-4xl">🩺</div>
               <p className="text-sm font-semibold text-[#1C1C1C]" style={{ fontFamily: "var(--font-montserrat), sans-serif" }}>Secouriste sur place</p>
             </div>
           </div>
